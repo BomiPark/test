@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/bottom_nav_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#00FFFF"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:src="@drawable/plus"
+        app:backgroundTint="@color/cardview_light_background" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/bottom_nav_fab_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="#00FFFF"
+        android:scaleX="1.8"
+        android:scaleY="1.8"
+        android:src="@drawable/camera"
+        android:visibility="invisible"
+        app:backgroundTint="@color/cardview_light_background" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/bottom_nav_fab_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="170dp"
+        android:backgroundTint="#00FFFF"
+        android:scaleX="1.8"
+        android:scaleY="1.8"
+        android:src="@drawable/select"
+        android:visibility="invisible"
+        app:backgroundTint="@color/cardview_light_background" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bottom_nav_fab"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/btn_community"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            />
+        <TextView
+            android:text="커뮤니티"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_community"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        android:layout_alignBottom="@+id/bottom_nav_fab">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:id="@+id/toMap"
+            android:src="@drawable/to_map" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="지도보기"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

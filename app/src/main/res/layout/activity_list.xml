@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="17dp"
+        android:layout_marginTop="3dp"
+        android:id="@+id/imagethree_community"
+        android:layout_marginBottom="4dp"
+        android:layout_below="@id/toolbar">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="40dp"
+            android:src="@drawable/temp_icon_copy_2"
+            android:id="@+id/image1_comm"
+            android:layout_toLeftOf="@+id/text1_com"
+            android:layout_marginRight="4dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text1_com"
+            android:text="32C"
+            android:layout_toLeftOf="@+id/text2_com"
+            android:layout_marginRight="30dp"
+            />
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="40dp"
+            android:src="@drawable/temp_icon"
+            android:id="@+id/image2_comm"
+            android:layout_toLeftOf="@+id/text2_com"
+            android:layout_marginRight="4dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text2_com"
+            android:text="30%"
+            android:textSize="15dp"
+            android:layout_centerInParent="true"/>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="40dp"
+            android:src="@drawable/temp_icon_copy"
+            android:id="@+id/image3_comm"
+            android:layout_toRightOf="@+id/text2_com"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text3_com"
+            android:text="32%"
+            android:layout_toRightOf="@+id/text2_com"
+            android:layout_marginLeft="30dp"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycler1" />
+
+
+</LinearLayout>

@@ -1,0 +1,134 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--ROW-->
+    <LinearLayout
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/select_sunny_icon_1"
+                android:background="@drawable/sunny_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="3"
+                android:scaleY="3"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/select_cloudy_icon_2"
+                android:background="@drawable/cloudy_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="3"
+                android:scaleY="3"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/select_cloud_icon_3"
+                android:background="@drawable/cloud_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="3"
+                android:scaleY="3"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!--ROW-->
+    <LinearLayout
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/select_rain_icon_4"
+                android:background="@drawable/rain_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="3"
+                android:scaleY="3"
+                android:layout_marginBottom="10dp"
+                android:gravity="top"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/select_snow_icon_5"
+                android:background="@drawable/snow_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="3"
+                android:scaleY="3"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/select_thunder_icon_6"
+                android:background="@drawable/lightning_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="3"
+                android:scaleY="3"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
